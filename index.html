@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solid Ground Construction</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #111;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav h2 {
+      font-size: 1.4rem;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    /* HERO */
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 30px;
+      background: #f4b400;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 70px 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+    }
+
+    /* ABOUT */
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* SERVICES */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .service-box {
+      background: white;
+      padding: 35px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .service-box h3 {
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    /* STATS */
+    .stats {
+      background: #111;
+      color: white;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      text-align: center;
+      padding: 60px 20px;
+      gap: 20px;
+    }
+
+    .stats h3 {
+      font-size: 2rem;
+      color: #f4b400;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: white;
+      padding: 60px 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 60px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .about {
+        grid-template-columns: 1fr;
+      }
+      header h1 {
+        font-size: 2.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h2>Solid Ground</h2>
+    <div>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header>
+    <h1>Building Strong Foundations for the Future</h1>
+    <p>Professional construction services delivering quality, safety, and modern design for residential and commercial projects.</p>
+    <a href="#contact" class="btn">Get a Quote</a>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="section-title">Who We Are</h2>
+    <div class="about">
+      <div>
+        <p>
+          Solid Ground Construction is a trusted construction company specializing in modern, durable, and cost-effective building solutions.
+          Our experienced team ensures every project meets the highest engineering and safety standards.
+        </p>
+        <p style="margin-top:15px;">
+          From concept to completion, we are committed to excellence and client satisfaction.
+        </p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1590649869213-10fb6b3f81f1" alt="Construction site">
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>Residential Construction</h3>
+        <p>High-quality homes built with durability, comfort, and modern aesthetics.</p>
+      </div>
+      <div class="service-box">
+        <h3>Commercial Projects</h3>
+        <p>Professional execution of offices, retail spaces, and mixed-use developments.</p>
+      </div>
+      <div class="service-box">
+        <h3>Renovation & Remodeling</h3>
+        <p>Transforming existing spaces into modern, functional environments.</p>
+      </div>
+      <div class="service-box">
+        <h3>Project Management</h3>
+        <p>End-to-end supervision ensuring projects are delivered on time and within budget.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div>
+      <h3>10+</h3>
+      <p>Years Experience</p>
+    </div>
+    <div>
+      <h3>150+</h3>
+      <p>Projects Completed</p>
+    </div>
+    <div>
+      <h3>100%</h3>
+      <p>Client Satisfaction</p>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact">
+      <p>📞 Phone: +254 700 000 000</p>
+      <p>📧 Email: info@solidgroundconstruction.com</p>
+      <p>📍 Location: Nairobi, Kenya</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Solid Ground Construction. All rights reserved.
+  </footer>
+
+</body>
+</html>
